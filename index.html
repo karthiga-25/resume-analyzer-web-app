@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Resume Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🚀 AI Resume Analyzer</h1>
+
+<select id="role" onchange="showRoleInfo()">
+<option value="">-- Select Role --</option>
+<option value="frontend developer">Frontend Developer</option>
+<option value="backend developer">Backend Developer</option>
+<option value="full stack developer">Full Stack Developer</option>
+<option value="devops engineer">DevOps Engineer</option>
+<option value="data scientist">Data Scientist</option>
+<option value="data analyst">Data Analyst</option>
+<option value="mobile developer">Mobile Developer</option>
+<option value="software tester">Software Tester</option>
+<option value="cyber security">Cyber Security</option>
+<option value="cloud engineer">Cloud Engineer</option>
+</select>
+
+<p id="roleInfo"></p>
+
+<textarea id="resumeText" placeholder="Paste resume..."></textarea>
+
+<input type="file" id="pdfFile">
+
+<br><br>
+
+<button onclick="analyzeText()">Analyze Text</button>
+<button onclick="analyzePDF()">Upload PDF</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
